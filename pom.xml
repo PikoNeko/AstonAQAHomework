@@ -1,0 +1,10 @@
+<project ...>
+  ...
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/PikoNeko/AstonAQAHomework</url>
+    </repository>
+  </distributionManagement>
+</project>
