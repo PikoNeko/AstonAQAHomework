@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c781a40a-a340-4830-ba5b-6ecbf1ca5958" name="Changes" comment="">
+    <list default="true" id="c781a40a-a340-4830-ba5b-6ecbf1ca5958" name="Changes" comment="a">
       <change beforePath="$PROJECT_DIR$/.github/workflows/maven.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_06_2024_15_37__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_06_2024_15_37__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_06_2024_16_58__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_06_2024_16_58__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson5/Lesson5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lesson5/Lesson5.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +31,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -36,7 +41,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/PikoNeko/lesson5.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/PikoNeko/AstonAQAHomework.git&quot;,
     &quot;accountId&quot;: &quot;8dacfb42-fe53-4b4a-b7bc-032ef18bb747&quot;
   },
   &quot;recentNewPullRequestHead&quot;: {
@@ -62,6 +67,7 @@
   "keyToString": {
     "Application.Lesson5.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "#1 on lesson5",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Lovet/Desktop/project shit/AstonAQAHomework",
     "node.js.detected.package.eslint": "true",
@@ -112,6 +118,9 @@
       <workItem from="1718804254768" duration="31000" />
       <workItem from="1718804582832" duration="639000" />
       <workItem from="1718805294610" duration="292000" />
+      <workItem from="1718813284012" duration="468000" />
+      <workItem from="1718814566985" duration="12000" />
+      <workItem from="1718973614186" duration="85000" />
     </task>
     <servers />
   </component>
@@ -129,7 +138,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="lesson5" />
+                        <option value="origin/lesson5" />
                       </list>
                     </value>
                   </entry>

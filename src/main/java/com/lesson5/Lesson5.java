@@ -2,13 +2,13 @@ package com.lesson5;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Scanner;
 
 public class Lesson5 {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
 
         //Переменные для работы с методами
         int a, b;
@@ -18,12 +18,10 @@ public class Lesson5 {
         boolean outOfInnerCycle = false;
 
         //выбор метода
-        do
-        {
+        do {
             System.out.println("Пожалуйста выберите метод (1-14)");
             a = writeIntPlease(in);
-            switch (a)
-            {
+            switch (a) {
                 case 1:
                     //1
                     //Метод при вызове печатает в столбец три слова: Orange, Banana, Apple
@@ -64,7 +62,7 @@ public class Lesson5 {
                     System.out.println("Для этого метода нужна ввести числа.");
                     a = writeIntPlease(in);
                     b = writeIntPlease(in);
-                    System.out.println("Сумма лежит в пределах от 10 до 20 (включительно): " + sumCompareFromTenToTwenty(a,b));
+                    System.out.println("Сумма лежит в пределах от 10 до 20 (включительно): " + sumCompareFromTenToTwenty(a, b));
                     break;
 
                 case 6:
@@ -93,14 +91,12 @@ public class Lesson5 {
                     метод должен отпечатать в консоль строку, указанное количество раз */
                     System.out.print("Введите строку: ");
                     message = in.next();
-                    do
-                    {
+                    do {
                         a = writeIntPlease(in);
-                        if(a <= 0)
-                        {
+                        if (a <= 0) {
                             System.out.println("А можно что-то больше 0?");
                         }
-                    }while (a <= 0);
+                    } while (a <= 0);
                     writeHowMuch(message, a);
                     break;
 
@@ -154,36 +150,29 @@ public class Lesson5 {
                     throw new AssertionError();
             }
 
-            do
-            {
+            do {
                 System.out.print("Выбрать другой метод(Y/N)? ");
                 message = in.next();
 
-                if(message.equals("N"))
-                {
+                if (message.equals("N")) {
                     outOfCycle = true;
                     outOfInnerCycle = true;
-                }
-                else if(message.equals("Y"))
-                {
+                } else if (message.equals("Y")) {
                     outOfInnerCycle = true;
-                }
-                else
-                {
+                } else {
                     System.out.println("Stop messin' around");
                 }
-            }while(outOfInnerCycle != true);
+            } while (outOfInnerCycle != true);
             outOfInnerCycle = false;
 
-        }while (outOfCycle != true);
+        } while (outOfCycle != true);
 
         System.out.println("Спасибо!");
     }
 
     //1
     /* Метод при вызове печатает в столбец три слова: Orange, Banana, Apple */
-    public static void printThreeWords()
-    {
+    public static void printThreeWords() {
         System.out.println("Orange" + "\n" + "Banana" + "\n" + "Apple");
     }
 
@@ -192,12 +181,11 @@ public class Lesson5 {
     /* Метод должен просуммировать объявленные в нем 2 int переменные,
     и если их сумма больше или равна 0, то вывести в консоль сообщение “Сумма положительная”,
     в противном случае - “Сумма отрицательная” */
-    public static void checkSumSign()
-    {
+    public static void checkSumSign() {
         int a = -7;
         int b = 543;
-        String message = (a+b) >= 0 ? " Сумма положительная" : " Сумма отрицательная";
-        System.out.println(a +" " + b + message);
+        String message = (a + b) >= 0 ? " Сумма положительная" : " Сумма отрицательная";
+        System.out.println(a + " " + b + message);
     }
 
     //3
@@ -206,8 +194,7 @@ public class Lesson5 {
     то в консоль метод должен вывести сообщение “Красный”,
     если лежит в пределах от 0 (0 исключительно) до 100 (100 включительно), то “Желтый”,
     если больше 100 (100 исключительно) - “Зеленый” */
-    public static void printColor()
-    {
+    public static void printColor() {
         int value = 0;
         String message;
         if (value <= 0)
@@ -216,37 +203,34 @@ public class Lesson5 {
             message = " Зеленый";
         else
             message = " Желтый";
-        System.out.println( value + message);
+        System.out.println(value + message);
     }
 
     //4
     /* Объявляем в методе int переменные a и b.
     Если a больше или равно b, то необходимо вывести в консоль сообщение “a >= b”,
     в противном случае “a < b”. */
-    public static void compareNumbers()
-    {
+    public static void compareNumbers() {
         int a = 87;
         int b = 3;
         String message = a >= b ? " a >= b" : " a < b";
-        System.out.println( "a: " + a + " b: " + b + message);
+        System.out.println("a: " + a + " b: " + b + message);
     }
 
     // 5
     /* Метод, принимающий на вход два целых числа и проверяющий,
     что их сумма лежит в пределах от 10 до 20 (включительно),
     если да – вернуть true, в противном случае – false. */
-    public static boolean  sumCompareFromTenToTwenty(int a, int b)
-    {
-        boolean letsCheck = (a+b) >= 10 && (a+b) <= 20;
-        return  letsCheck;
+    public static boolean sumCompareFromTenToTwenty(int a, int b) {
+        boolean letsCheck = (a + b) >= 10 && (a + b) <= 20;
+        return letsCheck;
     }
 
     // 6
     /* метод, который в качестве параметра принимает целое число,
     метод должен напечатать в консоль, положительное ли число передали или отрицательное.
     Замечание: ноль считаем положительным числом. */
-    public static void oddOrEven(int a)
-    {
+    public static void oddOrEven(int a) {
         String message;
 
         message = a >= 0 ? " - положительное" : " - отрицательное";
@@ -257,19 +241,17 @@ public class Lesson5 {
     /* Метод, которому в качестве параметра передается целое число.
     Метод должен вернуть true, если число отрицательное, и вернуть false если положительное.
     Замечание: ноль считаем положительным числом. */
-    public static boolean  boolOddOrEven(int a)
-    {
+    public static boolean boolOddOrEven(int a) {
         boolean checkBool;
 
         checkBool = a < 0;
-        return  checkBool;
+        return checkBool;
     }
 
     // 8
     /* Метод, которому в качестве аргументов передается строка и число,
     метод должен отпечатать в консоль указанную строку, указанное количество раз */
-    public static void writeHowMuch(String a, int b)
-    {
+    public static void writeHowMuch(String a, int b) {
         System.out.println("Как пожелаете:");
         for (int i = 0; i < b; i++) {
             System.out.println(a);
@@ -280,11 +262,10 @@ public class Lesson5 {
     /* Метод, который определяет, является ли год високосным,
     и возвращает boolean (високосный - true, не високосный - false).
     Каждый 4-й год является високосным, кроме каждого 100-го, при этом каждый 400-й – високосный. */
-    public static boolean leapYear()
-    {
+    public static boolean leapYear() {
         Calendar cal = Calendar.getInstance();
         int year = cal.get(Calendar.YEAR);
-        if( (year % 4 == 0 && year % 100 != 0) || year % 400 == 0) return true;
+        if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) return true;
         else return false;
 
     }
@@ -292,14 +273,12 @@ public class Lesson5 {
     //10
     /* Метод создает целочисленный массив, состоящий из элементов 0 и 1.
     С помощью цикла и условия меняем 0 на 1, 1 на 0. */
-    public static void switchingBools()
-    {
+    public static void switchingBools() {
         int[] taskMassive = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
         System.out.println(Arrays.toString(taskMassive));
 
         for (int i = 0; i < taskMassive.length; i++) {
-            switch (taskMassive[i])
-            {
+            switch (taskMassive[i]) {
                 case 0:
                     taskMassive[i] = 1;
                     break;
@@ -315,8 +294,7 @@ public class Lesson5 {
     //11
     /* Метод создает пустой целочисленный массив длиной 100.
     С помощью цикла заполняем его значениями от 1 до 100. */
-    public static void thousandMassive()
-    {
+    public static void thousandMassive() {
         int[] taskMassive = new int[100];
         for (int i = 0; i < taskMassive.length; i++) {
             taskMassive[i] = i + 1;
@@ -328,14 +306,12 @@ public class Lesson5 {
     //12
     /* Метод создает массив [ 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 ].
     С помощью цикла умножаем число из массива на 2, если оно меньше 6. */
-    public static void lessThenSix()
-    {
+    public static void lessThenSix() {
         int[] taskMassive = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         System.out.println(Arrays.toString(taskMassive));
 
-        for(int i = 0; i < taskMassive.length; i++)
-        {
-            if(taskMassive[i] < 6) taskMassive[i] *= 6;
+        for (int i = 0; i < taskMassive.length; i++) {
+            if (taskMassive[i] < 6) taskMassive[i] *= 6;
         }
 
         System.out.println(Arrays.toString(taskMassive));
@@ -344,21 +320,15 @@ public class Lesson5 {
     //13
     /* Метод Создает квадратный двумерный целочисленный массив (количество строк и столбцов одинаковое),
     и с помощью циклов заполняет его диагональные элементы единицами*/
-    public static void fillMasiveDiagonals()
-    {
+    public static void fillMasiveDiagonals() {
         int[][] taskMassive = new int[9][9];
 
-        for (int i = 0; i < taskMassive.length; i++)
-        {
-            for (int j = 0; j < taskMassive[i].length; j++)
-            {
-                if (i == j || (i + j) == (taskMassive.length - 1))
-                {
+        for (int i = 0; i < taskMassive.length; i++) {
+            for (int j = 0; j < taskMassive[i].length; j++) {
+                if (i == j || (i + j) == (taskMassive.length - 1)) {
                     taskMassive[i][j] = 1;
                     System.out.print("|" + taskMassive[i][j]);
-                }
-                else
-                {
+                } else {
                     taskMassive[i][j] = 0;
                     System.out.print("|" + taskMassive[i][j]);
                 }
@@ -370,8 +340,7 @@ public class Lesson5 {
     //14
     /* Метод, принимающий на вход два аргумента: len и initialValue,
     и возвращающий одномерный массив типа int длиной len, каждая ячейка которого равна initialValue.*/
-    public static int[] fillMassiveWith(int len, int initialValue)
-    {
+    public static int[] fillMassiveWith(int len, int initialValue) {
         int[] taskMassive = new int[len];
 
         for (int i = 0; i < taskMassive.length; i++) {
@@ -382,19 +351,15 @@ public class Lesson5 {
     }
 
     //Метод для ввода int и его проверки
-    public static  int writeIntPlease(Scanner in)
-    {
+    public static int writeIntPlease(Scanner in) {
         int a = 0;
         boolean checkInt = false;
-        do
-        {
+        do {
             System.out.print("Введите целое число: ");
-            if(in.hasNextInt())
-            {
+            if (in.hasNextInt()) {
                 a = in.nextInt();
                 checkInt = true;
-            }else
-            {
+            } else {
                 System.out.println("Stop messin' around");
                 in.next();
             }
