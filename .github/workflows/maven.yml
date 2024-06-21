@@ -1,0 +1,30 @@
+name: Java CI with Maven
+
+on:
+  push:
+    branches: [ "lesson5" ]
+  pull_request:
+    branches: [ "lesson5" ]
+  release:
+    branches: [ "lesson5" ]
+jobs:
+
+  publish:
+
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up JDK 11
+        uses: actions/setup-java@v3
+        with:
+          java-version: '11'
+          distribution: 'temurin'
+          cache: maven
+      - name: Build with Maven
+        run: mvn --batch-mode deploy -Dmaven.test.skip
+        env:
+          GITHUB_TOKEN: ${{ secrets.AQA }}
+   
