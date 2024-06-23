@@ -7,11 +7,11 @@
       <repository>
         <id>github</id>
         <name>GitHub Packages</name>
-        <url>https://maven.pkg.github.com/PikoNeko/AstonAQAHomework/tree/lesson5</url>
+        <url>https://maven.pkg.github.com/PikoNeko/AstonAQAHomework/</url>
       </repository>
     </distributionManagement>
-    <groupId>com.lesson5</groupId>
-    <artifactId>lesson5</artifactId>
+    <groupId>com</groupId>
+    <artifactId>lessons</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
