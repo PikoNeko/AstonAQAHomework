@@ -11,7 +11,7 @@
       </repository>
     </distributionManagement>
     <groupId>com</groupId>
-    <artifactId>lessons</artifactId>
+    <artifactId>lesson7</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
