@@ -8,15 +8,15 @@ import java.util.Calendar;
 import java.util.Scanner;
 
 public class Lesson5 {
-    public static void main(String[] args) {
 
+
+    public static void chooseMethod() {
         //Переменные для работы с методами
         int a, b;
         String message;
         Scanner in = new Scanner(System.in);
         boolean outOfCycle = false;
         boolean outOfInnerCycle = false;
-
         //выбор метода
         do {
             System.out.println("Пожалуйста выберите метод (1-14)");
