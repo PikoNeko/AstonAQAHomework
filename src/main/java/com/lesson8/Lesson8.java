@@ -33,7 +33,7 @@ public class Lesson8 {
     }
 
     //Метод преобразования в Int
-    public void toInt(String[][] massive) {
+    private void toInt(String[][] massive) {
         try {
             //Проверяем массив
             validateMassive(massive);
