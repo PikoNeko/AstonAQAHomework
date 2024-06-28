@@ -1,10 +1,12 @@
 package com.main;
 
-import com.lesson6.Lesson6;
+import com.lesson8.Lesson8;
 
 public class Main {
     public static void main(String[] args) {
-        Lesson6.doTask();
+
+        Lesson8 lesson8 = new Lesson8();
+
     }
 
 }
