@@ -4,24 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c781a40a-a340-4830-ba5b-6ecbf1ca5958" name="Changes" comment="Написан код для 6-ого задания">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lesson7/task1/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lesson7/task1/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lesson7/task1/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lesson7/task1/Lesson7_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/GeometricShapes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/GeometricalShapesActions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/Lesson7_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/maven.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven.yml" afterDir="false" />
+    <list default="true" id="c781a40a-a340-4830-ba5b-6ecbf1ca5958" name="Changes" comment="Написан код для 7-ого задания">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lesson8/Lesson8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lesson8/MyArrayDataException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lesson8/MyArraySizeException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson5/Lesson5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson6/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson6/Lesson6.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson6/Park.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task1/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task1/Cat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task1/Dog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task1/Lesson7_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/GeometricShapes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/GeometricalShapesActions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/Lesson7_2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/Triangle.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,15 +36,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson6" />
+        <entry key="$PROJECT_DIR$" value="b7fca21d0e73f510d0f83c54729ba867037686b1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -74,6 +72,9 @@
     &quot;repository&quot;: &quot;lesson5&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -89,7 +90,7 @@
     &quot;Application.Lesson6.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;lesson7&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lesson8&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Lovet/Desktop/project shit/AstonAQAHomework&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -146,7 +147,9 @@
       <workItem from="1719323776791" duration="8295000" />
       <workItem from="1719334842271" duration="78000" />
       <workItem from="1719342819252" duration="6636000" />
-      <workItem from="1719411322083" duration="2096000" />
+      <workItem from="1719411322083" duration="2941000" />
+      <workItem from="1719414690389" duration="103000" />
+      <workItem from="1719583003924" duration="9118000" />
     </task>
     <task id="LOCAL-00001" summary="Изменен файл .gitignore, исправлены ошибки">
       <option name="closed" value="true" />
@@ -164,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719151059090</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Написан код для 7-ого задания">
+      <option name="closed" value="true" />
+      <created>1719413433953</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719413433953</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +207,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Изменен файл .gitignore, исправлены ошибки" />
     <MESSAGE value="Написан код для 6-ого задания" />
-    <option name="LAST_COMMIT_MESSAGE" value="Написан код для 6-ого задания" />
+    <MESSAGE value="Написан код для 7-ого задания" />
+    <option name="LAST_COMMIT_MESSAGE" value="Написан код для 7-ого задания" />
   </component>
 </project>
