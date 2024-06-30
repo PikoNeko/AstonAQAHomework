@@ -21,8 +21,6 @@ public abstract class Animal {
     }
 
 
-
-
     //Get и Set
     protected String getName() {
 

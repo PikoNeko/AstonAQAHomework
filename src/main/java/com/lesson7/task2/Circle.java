@@ -6,11 +6,11 @@ public class Circle extends GeometricShapes {
     private double radius;
 
     //Конструкторы класса
-    public Circle(){
+    public Circle() {
         radius = 30d;
     }
 
-    public Circle(float radius){
+    public Circle(float radius) {
 
         this.radius = radius;
     }
@@ -27,7 +27,7 @@ public class Circle extends GeometricShapes {
     //Методы класса
     @Override
     public void perimeterCalculation() {
-        setPerimeter(2*Math.PI * radius);
+        setPerimeter(2 * Math.PI * radius);
     }
 
     @Override
@@ -36,7 +36,7 @@ public class Circle extends GeometricShapes {
     }
 
     @Override
-    protected void printInfo(){
+    protected void printInfo() {
         System.out.println("Радиус - " + radius + "\n");
         super.printInfo();
     }

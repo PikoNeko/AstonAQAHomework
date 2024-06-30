@@ -1,7 +1,6 @@
 package com.lesson7.task2;
 
 import java.util.Random;
-import java.util.Scanner;
 
 //Интерфейс для расчета периметра и площади
 public interface GeometricalShapesActions {
@@ -10,10 +9,8 @@ public interface GeometricalShapesActions {
 
     void areaCalculation();
 
-    //Default методы
-
-    //Выбор цвета
-    default String setColor() {
+    //Default метод выбор цвета фигуры
+    default String setRandomColor() {
 
         int caseSwitch;
         int max = 3;

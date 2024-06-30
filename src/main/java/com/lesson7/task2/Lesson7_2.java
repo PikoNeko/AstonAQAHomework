@@ -32,8 +32,8 @@ public class Lesson7_2 {
                     Circle circle = new Circle();
                     System.out.println("Введите радиус");
                     circle.setRadius(writeDouble());
-                    circle.setBackgroundColor(circle.setColor()); ;
-                    circle.setBorderColor(circle.setColor());
+                    circle.setBackgroundColor(circle.setRandomColor());
+                    circle.setBorderColor(circle.setRandomColor());
                     circle.printInfo();
                     break;
                 //Треугольник
@@ -45,8 +45,8 @@ public class Lesson7_2 {
                     triangle.setSideB(writeDouble());
                     System.out.println("Введите сторону C");
                     triangle.setSideC(writeDouble());
-                    triangle.setBackgroundColor(triangle.setColor());
-                    triangle.setBorderColor(triangle.setColor());
+                    triangle.setBackgroundColor(triangle.setRandomColor());
+                    triangle.setBorderColor(triangle.setRandomColor());
                     triangle.printInfo();
 
                     break;
@@ -57,8 +57,8 @@ public class Lesson7_2 {
                     rectangle.setSideA(writeDouble());
                     System.out.println("Введите сторону B");
                     rectangle.setSideB(writeDouble());
-                    rectangle.setBackgroundColor(rectangle.setColor());
-                    rectangle.setBorderColor(rectangle.setColor());
+                    rectangle.setBackgroundColor(rectangle.setRandomColor());
+                    rectangle.setBorderColor(rectangle.setRandomColor());
                     rectangle.printInfo();
                     break;
             }
@@ -78,7 +78,8 @@ public class Lesson7_2 {
 
         } while (true);
     }
-    private static double writeDouble(){
+
+    private static double writeDouble() {
 
         Scanner in = new Scanner(System.in);
         //Проверка на double вписанной строки

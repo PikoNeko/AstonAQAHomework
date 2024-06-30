@@ -1,9 +1,8 @@
 package com.lesson7.task2;
 
-import java.util.Scanner;
 
 //Абстрактный класс геометрических фигур
-public abstract class GeometricShapes implements GeometricalShapesActions{
+public abstract class GeometricShapes implements GeometricalShapesActions {
 
     //Поля класса
     private double perimeter;
@@ -35,16 +34,15 @@ public abstract class GeometricShapes implements GeometricalShapesActions{
 
 
     //Метод вывода информации о фигурах
-    protected void printInfo(){
-        if(perimeter == 0) perimeterCalculation();
-        if(area == 0) areaCalculation();
+    protected void printInfo() {
+        if (perimeter == 0) perimeterCalculation();
+        if (area == 0) areaCalculation();
         String message = String.format("Периметр - %f \n" +
                 "Площадь - %f \n" +
                 "Цвет фона - %s \n" +
                 "Цвет границ - %s", perimeter, area, backgroundColor, borderColor);
         System.out.println(message);
     }
-
 
 
 }

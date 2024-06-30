@@ -7,13 +7,13 @@ public class Triangle extends GeometricShapes {
     private double sideC;
 
     //Конструкторы класса
-    public Triangle(){
+    public Triangle() {
         sideA = 30d;
         sideB = 30d;
         sideC = 30d;
     }
 
-    public Triangle(double sideA, double sideB, double sideC){
+    public Triangle(double sideA, double sideB, double sideC) {
         this.sideA = sideA;
         this.sideB = sideB;
         this.sideC = sideC;
@@ -54,15 +54,15 @@ public class Triangle extends GeometricShapes {
 
     @Override
     public void areaCalculation() {
-        if (getPerimeter() == 0){
+        if (getPerimeter() == 0) {
             setPerimeter(sideA + sideB + sideC);
         }
-        double halfPerimeter = getPerimeter()/2;
+        double halfPerimeter = getPerimeter() / 2;
         setArea(Math.sqrt(halfPerimeter * (halfPerimeter - sideA) * (halfPerimeter - sideB) * (halfPerimeter - sideC)));
     }
 
     @Override
-    public void printInfo(){
+    public void printInfo() {
         String message = String.format("Сторона а - %f \nСторона b - %f \nСторона c - %f", sideA, sideB, sideC);
         System.out.println(message);
         super.printInfo();

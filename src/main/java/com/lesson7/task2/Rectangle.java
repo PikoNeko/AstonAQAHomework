@@ -7,12 +7,12 @@ public class Rectangle extends GeometricShapes {
     private double sideB;
 
     //Конструкторы класса
-    public Rectangle(){
+    public Rectangle() {
         sideA = 30d;
         sideB = 30d;
     }
 
-    public Rectangle(double sideA, double sideB){
+    public Rectangle(double sideA, double sideB) {
         this.sideA = sideA;
         this.sideB = sideB;
     }

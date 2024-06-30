@@ -21,7 +21,7 @@ public class Dog extends Animal {
     }
 
     //Get и Set
-    protected static int getDogCount(){
+    protected static int getDogCount() {
         return dogCount;
     }
 

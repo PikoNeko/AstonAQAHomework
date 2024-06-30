@@ -19,7 +19,6 @@ public class Lesson7_1 {
         int caseSwitch;
         Scanner in = new Scanner(System.in);
         Faker faker = new Faker();
-        Random random = new Random();
 
         //Переменные для ссылки на объект
         Cat catRef;
@@ -208,7 +207,7 @@ public class Lesson7_1 {
                         message = k.isFullness() ? " - Сыт" : " - Голоден";
                         System.out.println(k.getName() + message);
                     }
-                    System.out.println("В миске осталось: " +Bowl.getCatFood());
+                    System.out.println("В миске осталось: " + Bowl.getCatFood());
                     break;
                 case 6:
                     break workingCycle;
@@ -229,19 +228,6 @@ public class Lesson7_1 {
             } while (true);
         } while (true);
 
-    }
-
-    //Метод добавление еды в миску.
-    public static int addFood(int catBowl, Scanner in) {
-        int foodToAdd;
-        System.out.print("Сколько корма вы хотите положить (1-2147483647): ");
-        foodToAdd = writeIntPlease(in);
-        if ((foodToAdd + catBowl) > 1000) {
-            System.out.println("Упс. Перебор. Остатки канули в небытие.");
-            return 1000;
-        } else {
-            return foodToAdd + catBowl;
-        }
     }
 
     //Метод для ввода int и его проверки
