@@ -30,23 +30,35 @@ public class Lesson7_2 {
                 //Круг
                 case 1:
                     Circle circle = new Circle();
-                    circle.setBackgroundColor();
-                    circle.setBorderColor();
+                    System.out.println("Введите радиус");
+                    circle.setRadius(writeDouble());
+                    circle.setBackgroundColor(circle.setColor()); ;
+                    circle.setBorderColor(circle.setColor());
                     circle.printInfo();
                     break;
                 //Треугольник
                 case 2:
                     Triangle triangle = new Triangle();
-                    triangle.setBackgroundColor();
-                    triangle.setBorderColor();
+                    System.out.println("Введите сторону А");
+                    triangle.setSideA(writeDouble());
+                    System.out.println("Введите сторону B");
+                    triangle.setSideB(writeDouble());
+                    System.out.println("Введите сторону C");
+                    triangle.setSideC(writeDouble());
+                    triangle.setBackgroundColor(triangle.setColor());
+                    triangle.setBorderColor(triangle.setColor());
                     triangle.printInfo();
 
                     break;
                 //Квадрат
                 case 3:
                     Rectangle rectangle = new Rectangle();
-                    rectangle.setBackgroundColor();
-                    rectangle.setBorderColor();
+                    System.out.println("Введите сторону А");
+                    rectangle.setSideA(writeDouble());
+                    System.out.println("Введите сторону B");
+                    rectangle.setSideB(writeDouble());
+                    rectangle.setBackgroundColor(rectangle.setColor());
+                    rectangle.setBorderColor(rectangle.setColor());
                     rectangle.printInfo();
                     break;
             }
@@ -65,5 +77,20 @@ public class Lesson7_2 {
             } while (true);
 
         } while (true);
+    }
+    private static double writeDouble(){
+
+        Scanner in = new Scanner(System.in);
+        //Проверка на double вписанной строки
+        do {
+            System.out.print("Введите целое число или число с плавающей точкой число: ");
+            if (in.hasNextDouble()) {
+                return in.nextDouble();
+            } else {
+                System.out.println("Stop messin' around");
+                in.next();
+            }
+        }
+        while (true);
     }
 }

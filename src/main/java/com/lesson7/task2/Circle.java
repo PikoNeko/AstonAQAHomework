@@ -7,8 +7,7 @@ public class Circle extends GeometricShapes {
 
     //Конструкторы класса
     public Circle(){
-        System.out.println("Радиус");
-        setRadius(setDouble());
+        radius = 30d;
     }
 
     public Circle(float radius){
@@ -32,7 +31,7 @@ public class Circle extends GeometricShapes {
     }
 
     @Override
-    public void areaСalculation() {
+    public void areaCalculation() {
         setArea(Math.PI * Math.pow(radius, 2));
     }
 

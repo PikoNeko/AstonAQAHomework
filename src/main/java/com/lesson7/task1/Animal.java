@@ -1,19 +1,27 @@
 package com.lesson7.task1;
 
 //Класс Животные
-public class Animal {
+public abstract class Animal {
 
     //Поля класса
     private String name;
+    //Поле для подсчета
+    private static int animalCount = 0;
 
     //Конструкторы класса
     public Animal() {
+
         this.name = "Животное";
+        animalCount++;
     }
 
     public Animal(String name) {
         this.name = name;
+        animalCount++;
     }
+
+
+
 
     //Get и Set
     protected String getName() {
@@ -21,9 +29,8 @@ public class Animal {
         return name;
     }
 
-    protected void setName(String name) {
-
-        this.name = name;
+    protected static int getAnimalCount() {
+        return animalCount;
     }
 
 

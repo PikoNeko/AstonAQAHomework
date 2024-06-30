@@ -3,20 +3,24 @@ package com.lesson7.task1;
 //Класс Кот наследник от Животное
 public class Cat extends Animal {
 
+    //Поле сытости
     private boolean fullness;
-    private int stomach;
+    //Поле для подсчета
+    private static int catCount = 0;
+    //Поле ограничения на бега
+    private final int maxRunLength = 200;
 
     //Конструкторы класса
     public Cat() {
         super();
         fullness = false;
-        stomach = 0;
+        catCount++;
     }
 
     public Cat(String name) {
         super(name);
         fullness = false;
-        stomach = 0;
+        catCount++;
     }
 
     //GET и SET
@@ -28,19 +32,15 @@ public class Cat extends Animal {
         this.fullness = fullness;
     }
 
-
-    protected int getStomach() {
-        return stomach;
+    protected static int getCatCount() {
+        return catCount;
     }
 
-    protected void setStomach(int stomach) {
-        this.stomach = stomach;
-    }
 
     //Изменяем метод run
     @Override
     protected void run(int length) {
-        if (length <= 200) {
+        if (length <= maxRunLength) {
             super.run(length);
         } else {
             System.out.println(getName() + " не может бежать так далеко");
@@ -53,13 +53,5 @@ public class Cat extends Animal {
         System.out.println(getName() + " не умеет плавать");
     }
 
-    //Метод траты котом калорий
-    protected void workout() {
-        if (this.stomach < 5) {
-            setStomach(0);
-            setFullness(false);
-        } else {
-            this.stomach -= 5;
-        }
-    }
+
 }

@@ -8,10 +8,8 @@ public class Rectangle extends GeometricShapes {
 
     //Конструкторы класса
     public Rectangle(){
-        System.out.println("сторона A");
-        setSideA(setDouble());
-        System.out.println("сторону B");
-        setSideB(setDouble());
+        sideA = 30d;
+        sideB = 30d;
     }
 
     public Rectangle(double sideA, double sideB){
@@ -42,7 +40,7 @@ public class Rectangle extends GeometricShapes {
     }
 
     @Override
-    public void areaСalculation() {
+    public void areaCalculation() {
         setArea(sideA * sideB);
     }
 

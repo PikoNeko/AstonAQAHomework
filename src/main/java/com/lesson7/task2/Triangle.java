@@ -8,12 +8,9 @@ public class Triangle extends GeometricShapes {
 
     //Конструкторы класса
     public Triangle(){
-        System.out.println("сторона A");
-        setSideA(setDouble());
-        System.out.println("сторона B");
-        setSideB(setDouble());
-        System.out.println("сторона C");
-        setSideC(setDouble());
+        sideA = 30d;
+        sideB = 30d;
+        sideC = 30d;
     }
 
     public Triangle(double sideA, double sideB, double sideC){
@@ -56,7 +53,7 @@ public class Triangle extends GeometricShapes {
     }
 
     @Override
-    public void areaСalculation() {
+    public void areaCalculation() {
         if (getPerimeter() == 0){
             setPerimeter(sideA + sideB + sideC);
         }
