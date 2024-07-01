@@ -11,7 +11,7 @@
       </repository>
     </distributionManagement>
     <groupId>com</groupId>
-    <artifactId>lessons</artifactId>
+    <artifactId>lesson7</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -19,5 +19,20 @@
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>net.datafaker</groupId>
+            <artifactId>datafaker</artifactId>
+            <version>1.9.0</version>
+        </dependency>
+    </dependencies>
+    <repositories>
+        <repository>
+            <id>maven_central</id>
+            <name>Maven Central</name>
+            <url>https://repo.maven.apache.org/maven2/</url>
+        </repository>
+    </repositories>
 
 </project>
