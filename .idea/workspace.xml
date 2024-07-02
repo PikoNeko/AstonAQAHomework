@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c781a40a-a340-4830-ba5b-6ecbf1ca5958" name="Changes" comment="Написан код для 7-ого задания">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lesson8/Lesson8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lesson8/MyArrayDataException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lesson8/MyArraySizeException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task1/Animal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task1/Cat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task1/Dog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task1/Lesson7_1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/Circle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/GeometricShapes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/GeometricalShapesActions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/Lesson7_2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/Rectangle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/Triangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson8/Lesson8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lesson8/Lesson8.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,35 +70,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Lesson5.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Lesson6.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;lesson8&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lovet/Desktop/project shit/AstonAQAHomework&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Lovet/IdeaProjects/lesson5/src/main/java/com/lesson5/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Run",
+    "Application.Lesson5.executor": "Run",
+    "Application.Lesson6.executor": "Run",
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "#4 on lesson8",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Lovet/Desktop/project shit/AstonAQAHomework",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/Lovet/IdeaProjects/lesson5/src/main/java/com/lesson5/Main.java",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.main.Main" />
-      <module name="lesson5" />
+      <module name="lesson7" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -150,6 +137,7 @@
       <workItem from="1719411322083" duration="2941000" />
       <workItem from="1719414690389" duration="103000" />
       <workItem from="1719583003924" duration="9118000" />
+      <workItem from="1719943386860" duration="1079000" />
     </task>
     <task id="LOCAL-00001" summary="Изменен файл .gitignore, исправлены ошибки">
       <option name="closed" value="true" />
@@ -208,6 +196,7 @@
     <MESSAGE value="Изменен файл .gitignore, исправлены ошибки" />
     <MESSAGE value="Написан код для 6-ого задания" />
     <MESSAGE value="Написан код для 7-ого задания" />
-    <option name="LAST_COMMIT_MESSAGE" value="Написан код для 7-ого задания" />
+    <MESSAGE value="Написал класс для проверки." />
+    <option name="LAST_COMMIT_MESSAGE" value="Написал класс для проверки." />
   </component>
 </project>

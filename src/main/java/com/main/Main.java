@@ -7,6 +7,8 @@ public class Main {
 
         Lesson8 lesson8 = new Lesson8();
 
+        lesson8.doWork();
+
     }
 
 }
