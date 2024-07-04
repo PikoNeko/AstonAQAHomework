@@ -11,7 +11,7 @@
       </repository>
     </distributionManagement>
     <groupId>com</groupId>
-    <artifactId>lesson9</artifactId>
+    <artifactId>lesson10_1</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -27,4 +27,12 @@
             <version>1.9.0</version>
         </dependency>
     </dependencies>
+    <repositories>
+        <repository>
+            <id>maven_central</id>
+            <name>Maven Central</name>
+            <url>https://repo.maven.apache.org/maven2/</url>
+        </repository>
+    </repositories>
+
 </project>
