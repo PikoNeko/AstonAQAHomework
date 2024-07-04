@@ -1,12 +1,31 @@
 package com.main;
 
-import com.lesson8.Lesson8;
+import com.lesson9.Task1;
+import com.lesson9.Task2;
+import com.myInterfaces.WriteChecks;
 
-public class Main {
+public class Main implements WriteChecks {
     public static void main(String[] args) {
 
-        Lesson8 lesson8 = new Lesson8();
+        workingCycle:
+        do{
+            System.out.println("Выберите задание(1-2) (Выйти-3)");
+            switch (WriteChecks.IntCheck()) {
+                case 1:
+                    Task1.doTask();
+                    break;
+                case 2:
+                    Task2.doTask();
+                    break;
+                case 3:
+                    System.out.println("Спасибо!");
+                    break workingCycle;
+            }
+        }while (true);
 
-        lesson8.TEST_DATA.forEach(lesson8::checkArray);
+
+
     }
+
+
 }

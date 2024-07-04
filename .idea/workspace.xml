@@ -4,206 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c781a40a-a340-4830-ba5b-6ecbf1ca5958" name="Changes" comment="Переделал код в соответствии с правками.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LimitValuesTest.java" beforeDir="false" />
+    <list default="true" id="4fdeb584-e695-4d24-98f8-52971e0b370d" name="Changes" comment="Написан код для 9-ого задания">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager">
-    <option name="groupingKeys">
-      <option value="directory" />
-      <option value="module" />
-    </option>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="b7fca21d0e73f510d0f83c54729ba867037686b1" />
-      </map>
-    </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;PikoNeko&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/PikoNeko/AstonAQAHomework.git&quot;,
-    &quot;accountId&quot;: &quot;8dacfb42-fe53-4b4a-b7bc-032ef18bb747&quot;
-  },
-  &quot;recentNewPullRequestHead&quot;: {
-    &quot;server&quot;: {
-      &quot;useHttp&quot;: false,
-      &quot;host&quot;: &quot;github.com&quot;,
-      &quot;port&quot;: null,
-      &quot;suffix&quot;: null
-    },
-    &quot;owner&quot;: &quot;PikoNeko&quot;,
-    &quot;repository&quot;: &quot;lesson5&quot;
-  }
-}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
-}</component>
-  <component name="ProjectId" id="2i5xVezjNlfQZipzNwGwKrQShSD" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Lesson5.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Lesson6.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;lesson8&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lovet/Desktop/project shit/AstonAQAHomework&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Lovet/IdeaProjects/lesson5/src/main/java/com/lesson5/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "lesson9"
   }
-}</component>
-  <component name="RunManager">
-    <configuration name="App" type="Application" factoryName="Application">
-      <option name="ALTERNATIVE_JRE_PATH" value="11" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.main.Main" />
-      <module name="lesson7" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
-      </set>
-    </attachedChunks>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+}]]></component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="c781a40a-a340-4830-ba5b-6ecbf1ca5958" name="Changes" comment="" />
-      <created>1718794267456</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1718794267456</updated>
-      <workItem from="1718794268242" duration="5664000" />
-      <workItem from="1718804254768" duration="31000" />
-      <workItem from="1718804582832" duration="639000" />
-      <workItem from="1718805294610" duration="292000" />
-      <workItem from="1718813284012" duration="468000" />
-      <workItem from="1718814566985" duration="12000" />
-      <workItem from="1718973614186" duration="11265000" />
-      <workItem from="1719149638059" duration="2305000" />
-      <workItem from="1719151957854" duration="949000" />
-      <workItem from="1719240350415" duration="4340000" />
-      <workItem from="1719249310494" duration="12235000" />
-      <workItem from="1719323776791" duration="8295000" />
-      <workItem from="1719334842271" duration="78000" />
-      <workItem from="1719342819252" duration="6636000" />
-      <workItem from="1719411322083" duration="2941000" />
-      <workItem from="1719414690389" duration="103000" />
-      <workItem from="1719583003924" duration="9118000" />
-      <workItem from="1719943386860" duration="1079000" />
-    </task>
-    <task id="LOCAL-00001" summary="Изменен файл .gitignore, исправлены ошибки">
-      <option name="closed" value="true" />
-      <created>1718973757005</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1718973757005</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Написан код для 6-ого задания">
-      <option name="closed" value="true" />
-      <created>1719151059090</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1719151059090</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Написан код для 7-ого задания">
-      <option name="closed" value="true" />
-      <created>1719413433953</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1719413433953</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Переделал код в соответствии с правками.">
-      <option name="closed" value="true" />
-      <created>1719957689085</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1719957689085</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/lesson5" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Изменен файл .gitignore, исправлены ошибки" />
-    <MESSAGE value="Написан код для 6-ого задания" />
-    <MESSAGE value="Написан код для 7-ого задания" />
-    <MESSAGE value="Написал класс для проверки." />
-    <MESSAGE value="Переделал код в соответствии с правками." />
-    <option name="LAST_COMMIT_MESSAGE" value="Переделал код в соответствии с правками." />
+    <MESSAGE value="Написан код для 9-ого задания" />
+    <option name="LAST_COMMIT_MESSAGE" value="Написан код для 9-ого задания" />
   </component>
 </project>
