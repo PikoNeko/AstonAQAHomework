@@ -1,8 +1,11 @@
-import com.exceptions.OutOfBoundariesException;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
+
+import java.math.BigInteger;
 
 import static com.lesson10.Lesson10.factorialCalculation;
-import static com.dataForTests.DataOutOfBounds.*;
+import com.exceptions.OutOfBoundariesException;
 
 @DisplayName("Граничное тестирование (0-100)")
 class BoundariesTest {
@@ -11,27 +14,30 @@ class BoundariesTest {
     @Nested
     class firstBoundary {
         @Tag("-1")
-        @Test
-        void lessThenMinValueTest() {
+        @ParameterizedTest
+        @ValueSource(strings = {"Нельзя вычислять факториал отрицательных чисел!"})
+        void lessThenMinValueTest(String value) {
             OutOfBoundariesException e = Assertions.assertThrows(OutOfBoundariesException.class, () -> factorialCalculation(-1));
-            Assertions.assertEquals(getLESS_THEN_MIN_VALUE(), e.getMessage());
+            Assertions.assertEquals(value, e.getMessage());
         }
 
         @Tag("0")
-        @Test
-        void MinValueTest() {
+        @ParameterizedTest
+        @ValueSource(ints = {1})
+        void MinValueTest(int value) {
             try {
-                Assertions.assertEquals(getMIN_VALUE(), factorialCalculation(0));
+                Assertions.assertEquals(BigInteger.valueOf(value), factorialCalculation(0));
             } catch (OutOfBoundariesException e) {
                 throw new RuntimeException(e);
             }
         }
 
         @Tag("1")
-        @Test
-        void aboveMinValueTest() {
+        @ParameterizedTest
+        @ValueSource(ints = {1})
+        void aboveMinValueTest(int value) {
             try {
-                Assertions.assertEquals(getABOVE_MIN_VALUE(), factorialCalculation(1));
+                Assertions.assertEquals(BigInteger.valueOf(value), factorialCalculation(1));
             } catch (OutOfBoundariesException e) {
                 throw new RuntimeException(e);
             }
@@ -42,30 +48,39 @@ class BoundariesTest {
     @Nested
     class SecondBoundary {
         @Tag("99")
-        @Test
-        void belowMaxValueTest() {
+        @ParameterizedTest
+        @ValueSource(
+                strings = {"933262154439441526816992388562667004907159682643816214685929638952175999932299156089414639761565182862536979208272237582511852109168640000000000000000000000"}
+        )
+        void belowMaxValueTest( String value) {
             try {
-                Assertions.assertEquals(getBELOW_MAX_VALUE(), factorialCalculation(99));
+                BigInteger localValue = new BigInteger(value);
+                Assertions.assertEquals(localValue, factorialCalculation(99));
             } catch (OutOfBoundariesException e) {
                 throw new RuntimeException(e);
             }
         }
 
         @Tag("100")
-        @Test
-        void maxValueTest() {
+        @ParameterizedTest
+        @ValueSource(
+                strings = {"93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000"}
+        )
+        void maxValueTest( String value) {
             try {
-                Assertions.assertEquals(getMAX_VALUE(), factorialCalculation(100));
+                BigInteger localValue = new BigInteger(value);
+                Assertions.assertEquals(localValue, factorialCalculation(100));
             } catch (OutOfBoundariesException e) {
                 throw new RuntimeException(e);
             }
         }
 
         @Tag("101")
-        @Test
-        void aboveMaxValueTest() {
+        @ParameterizedTest
+        @ValueSource(strings = {"Слишком большое число!"})
+        void aboveMaxValueTest(String value) {
             OutOfBoundariesException e = Assertions.assertThrows(OutOfBoundariesException.class, () -> factorialCalculation(101));
-            Assertions.assertEquals(getABOVE_MAX_VALUE(), e.getMessage());
+            Assertions.assertEquals(value, e.getMessage());
         }
     }
 }
