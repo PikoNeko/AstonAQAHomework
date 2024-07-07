@@ -2,11 +2,11 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ "lesson7" ]
+    branches: [ "lesson10_testng" ]
   pull_request:
-    branches: [ "lesson7" ]
+    branches: [ "lesson10_testng" ]
   release:
-    branches: [ "lesson7" ]
+    branches: [ "lesson10_testng" ]
 jobs:
 
   publish:
