@@ -1,25 +1,27 @@
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
-import static com.dataForTests.DataOutOfBounds.*;
 import static com.lesson10.Lesson10.factorialCalculation;
 import com.exceptions.OutOfBoundariesException;
 
-public class BoundariesTest {
+import java.math.BigInteger;
 
+public class BoundariesTest {
 
     @Test(
             description = "-1",
             expectedExceptions = OutOfBoundariesException.class,
             expectedExceptionsMessageRegExp = "Нельзя вычислять факториал отрицательных чисел!")
-    void lessThenMinValueTest() throws OutOfBoundariesException {
+    void belowMinValueTest() throws OutOfBoundariesException {
         factorialCalculation(-1);
     }
 
         @Test(description = "0")
-        void MinValueTest() {
+        @Parameters("minValue")
+        void MinValueTest(int value) {
             try {
-                assertEquals(getMIN_VALUE(), factorialCalculation(0));
+                assertEquals(BigInteger.valueOf(value), factorialCalculation(0));
             } catch (OutOfBoundariesException e) {
                 throw new RuntimeException(e);
             }
@@ -27,27 +29,33 @@ public class BoundariesTest {
         }
 
         @Test(description = "1")
-        void aboveMinValueTest() {
+        @Parameters("aboveMinValue")
+        void aboveMinValueTest(String value) {
             try {
-                assertEquals(getABOVE_MIN_VALUE(), factorialCalculation(1));
+                BigInteger localValue = new BigInteger(value);
+                assertEquals(localValue, factorialCalculation(1));
             } catch (OutOfBoundariesException e) {
                 throw new RuntimeException(e);
             }
         }
 
         @Test(description = "99")
-        void belowMaxValueTest() {
+        @Parameters("belowMaxValue")
+        void belowMaxValueTest(String value) {
             try {
-                assertEquals(getBELOW_MAX_VALUE(), factorialCalculation(99));
+                BigInteger localValue = new BigInteger(value);
+                assertEquals(localValue, factorialCalculation(99));
             } catch (OutOfBoundariesException e) {
                 throw new RuntimeException(e);
             }
         }
 
         @Test(description = "100")
-        void maxValueTest() {
+        @Parameters("maxValue")
+        void maxValueTest( String value) {
             try {
-                assertEquals(getMAX_VALUE(), factorialCalculation(100));
+                BigInteger localValue = new BigInteger(value);
+                assertEquals(localValue, factorialCalculation(100));
             } catch (OutOfBoundariesException e) {
                 throw new RuntimeException(e);
             }

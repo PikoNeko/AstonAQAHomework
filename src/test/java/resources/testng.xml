@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="FactorialTest">
+
+    <test name="BoundariesTest">
+        <parameter name="minValue" value="1"/>
+        <parameter name="aboveMinValue" value="1"/>
+        <parameter name="belowMaxValue"
+                   value="933262154439441526816992388562667004907159682643816214685929638952175999932299156089414639761565182862536979208272237582511852109168640000000000000000000000"
+        />
+        <parameter name="belowMaxValue"
+                   value="933262154439441526816992388562667004907159682643816214685929638952175999932299156089414639761565182862536979208272237582511852109168640000000000000000000000"
+        />
+
+        <classes>
+            <class name="BoundariesTest"/>
+        </classes>
+    </test>
+</suite>
