@@ -57,7 +57,7 @@ public class BoundariesTest {
     }
 
     @Test(
-            description = "-1 - выход за второе граничное значение",
+            description = "101 - выход за второе граничное значение",
             expectedExceptions = OutOfBoundariesException.class,
             expectedExceptionsMessageRegExp = "Слишком большое число!"
     )
