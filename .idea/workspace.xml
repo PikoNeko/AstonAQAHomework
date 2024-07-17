@@ -4,23 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fdeb584-e695-4d24-98f8-52971e0b370d" name="Changes" comment="Написан код для 9-ого задания">
-      <change afterPath="$PROJECT_DIR$/src/test/java/MTSTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/maven.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven.yml" afterDir="false" />
+    <list default="true" id="4fdeb584-e695-4d24-98f8-52971e0b370d" name="Changes" comment="Написал недокод">
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson13/mtsTests/MTSTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/payCommServicesFormData.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exceptions/OutOfBoundariesException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson10/Lesson10.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/GeometricalShapesActions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/Triangle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson8/Lesson8.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson9/PhoneBook.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson9/Task1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson9/Task2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myInterfaces/WriteChecks.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BoundariesTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/resources/testng.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MTSTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +51,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.MTSTest.blockWorksCommunicationServices (1).executor": "Run",
+    "JUnit.MTSTest.blockWorksCommunicationServices (2).executor": "Run",
+    "JUnit.MTSTest.blockWorksCommunicationServices.executor": "Run",
     "JUnit.MTSTest.executor": "Run",
+    "JUnit.MTSTest.haveCorrectTitle.executor": "Run",
+    "JUnit.MTSTest.moreDetailsLinkWorks.executor": "Run",
+    "JUnit.MTSTest.presenceOfPaymentLogos (1).executor": "Run",
+    "JUnit.MTSTest.presenceOfPaymentLogos.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "lesson13",
     "ignore.virus.scanning.warn.message": "true",
@@ -75,20 +70,117 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.6068966",
+    "settings.editor.selected.configurable": "project.propCompiler",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lovet\Desktop\project shit\AstonAQAHomework\src\test\resources" />
+      <recent name="C:\Users\Lovet\Desktop\project shit\AstonAQAHomework\src\test\java\lesson13\mtsTests" />
+      <recent name="C:\Users\Lovet\Desktop\project shit\AstonAQAHomework\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MTSTest">
     <configuration name="MTSTest" type="JUnit" factoryName="JUnit">
       <module name="lesson10_1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MTSTest" />
+      <option name="PACKAGE_NAME" value="lesson13.mtsTests" />
+      <option name="MAIN_CLASS_NAME" value="lesson13.mtsTests.MTSTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MTSTest.blockWorksCommunicationServices (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lesson10_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson13.mtsTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson13.mtsTests" />
+      <option name="MAIN_CLASS_NAME" value="lesson13.mtsTests.MTSTest" />
+      <option name="METHOD_NAME" value="blockWorksCommunicationServices(java.lang.String,java.lang.String,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MTSTest.blockWorksCommunicationServices (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lesson10_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson13.mtsTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson13.mtsTests" />
+      <option name="MAIN_CLASS_NAME" value="lesson13.mtsTests.MTSTest" />
+      <option name="METHOD_NAME" value="blockWorksCommunicationServices(java.lang.String,java.lang.String,java.lang.String,boolean)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MTSTest.blockWorksCommunicationServices" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lesson10_1" />
+      <option name="PACKAGE_NAME" value="lesson13.mtsTests" />
+      <option name="MAIN_CLASS_NAME" value="lesson13.mtsTests.MTSTest" />
+      <option name="METHOD_NAME" value="blockWorksCommunicationServices" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MTSTest.haveCorrectTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lesson10_1" />
+      <option name="PACKAGE_NAME" value="lesson13.mtsTests" />
+      <option name="MAIN_CLASS_NAME" value="lesson13.mtsTests.MTSTest" />
+      <option name="METHOD_NAME" value="haveCorrectTitle(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MTSTest.moreDetailsLinkWorks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lesson10_1" />
+      <option name="PACKAGE_NAME" value="lesson13.mtsTests" />
+      <option name="MAIN_CLASS_NAME" value="lesson13.mtsTests.MTSTest" />
+      <option name="METHOD_NAME" value="moreDetailsLinkWorks(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MTSTest.presenceOfPaymentLogos (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lesson10_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MTSTest" />
+      <option name="METHOD_NAME" value="presenceOfPaymentLogos(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.MTSTest" />
+      <item itemvalue="JUnit.MTSTest.blockWorksCommunicationServices" />
+      <item itemvalue="JUnit.MTSTest.blockWorksCommunicationServices (1)" />
+      <item itemvalue="JUnit.MTSTest.blockWorksCommunicationServices (2)" />
+      <item itemvalue="JUnit.MTSTest.haveCorrectTitle" />
+      <item itemvalue="JUnit.MTSTest.moreDetailsLinkWorks" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MTSTest.blockWorksCommunicationServices (2)" />
+        <item itemvalue="JUnit.MTSTest.blockWorksCommunicationServices (1)" />
+        <item itemvalue="JUnit.MTSTest.moreDetailsLinkWorks" />
+        <item itemvalue="JUnit.MTSTest.blockWorksCommunicationServices" />
+        <item itemvalue="JUnit.MTSTest.haveCorrectTitle" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -114,8 +206,18 @@
       <workItem from="1721076024695" duration="1832000" />
       <workItem from="1721078147894" duration="1366000" />
       <workItem from="1721135441258" duration="261000" />
-      <workItem from="1721135715518" duration="4002000" />
+      <workItem from="1721135715518" duration="16261000" />
+      <workItem from="1721202440728" duration="17648000" />
     </task>
+    <task id="LOCAL-00001" summary="Написал недокод">
+      <option name="closed" value="true" />
+      <created>1721139846289</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721139846289</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +229,26 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Написан код для 9-ого задания" />
     <MESSAGE value="Исправлены небольшие огрехи." />
-    <option name="LAST_COMMIT_MESSAGE" value="Исправлены небольшие огрехи." />
+    <MESSAGE value="Написал недокод" />
+    <option name="LAST_COMMIT_MESSAGE" value="Написал недокод" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/lesson13/mtsTests/MTSTest.java</url>
+          <line>75</line>
+          <properties class="lesson13.mtsTests.MTSTest" method="blockWorksCommunicationServices">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
