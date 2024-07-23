@@ -5,39 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fdeb584-e695-4d24-98f8-52971e0b370d" name="Changes" comment="Написаны все тесты">
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson14/MTSReplenishmentTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson14/pages/mainPage/BePaidIframe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson14/pages/mainPage/MainPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson14/pages/mainPage/abstractions/BaseComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson14/pages/mainPage/abstractions/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson14/pages/mainPage/objects/ArrearsPayForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson14/pages/mainPage/objects/CommServicesPayForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson14/pages/mainPage/objects/CookieWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson14/pages/mainPage/objects/InstallmentPayForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson14/pages/mainPage/objects/InternetPayForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson14/pages/mainPage/objects/PayForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson14/pages/mainPage/objects/PayWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/payFrameCardBrandsLogoCheckSource.cvs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/maven.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task1/Animal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task1/Bowl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task1/Cat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task1/Dog.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task1/Lesson7_1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/Circle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/GeometricShapes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/GeometricalShapesActions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/Lesson7_2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/Rectangle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/Triangle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson8/Lesson8.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson9/PhoneBook.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson9/Task1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson9/Task2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myInterfaces/WriteChecks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lesson14/MTSReplenishmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson14/MTSReplenishmentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +62,7 @@
     "JUnit.MTSReplenishmentTest.payFrameCheck.executor": "Run",
     "JUnit.TestTest.doSomething.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "lesson14",
+    "git-widget-placeholder": "#9 on lesson14",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -224,8 +193,20 @@
       <workItem from="1721491819778" duration="1780000" />
       <workItem from="1721512621545" duration="6017000" />
       <workItem from="1721553958119" duration="20176000" />
-      <workItem from="1721575875874" duration="13798000" />
+      <workItem from="1721575875874" duration="13890000" />
+      <workItem from="1721744147000" duration="20000" />
+      <workItem from="1721744722234" duration="123000" />
+      <workItem from="1721744934401" duration="557000" />
     </task>
+    <task id="LOCAL-00001" summary="Написаны все тесты">
+      <option name="closed" value="true" />
+      <created>1721604752577</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721604752577</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +225,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Написан код для 9-ого задания" />
-    <option name="LAST_COMMIT_MESSAGE" value="Написан код для 9-ого задания" />
+    <MESSAGE value="Написаны все тесты" />
+    <option name="LAST_COMMIT_MESSAGE" value="Написаны все тесты" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

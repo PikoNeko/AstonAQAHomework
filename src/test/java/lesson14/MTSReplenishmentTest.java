@@ -23,7 +23,6 @@ import static org.junit.jupiter.api.Assertions.*;
 public class MTSReplenishmentTest {
 
     private WebDriver driver;
-    private PayForm payForm;
     private MainPage mainPage;
     @BeforeEach
     void beforeEachTest() {
@@ -41,9 +40,6 @@ public class MTSReplenishmentTest {
 
         //Ожидаем
         wait.until(ExpectedConditions.invisibilityOf(cookieWrapper.getDeclineButton()));
-
-        payForm = new MainPage(driver).getPayWrapper().getPayForm();
-
 
     }
 
@@ -63,6 +59,8 @@ public class MTSReplenishmentTest {
         @CsvSource({"Услуги связи, Номер телефона, Сумма, E-mail для отправки чека"})
         void commServicesCheck(String formName, String phNumberPlaceholder, String moneyPlaceholder, String emailPlaceholder) {
 
+            //Из-за использования appium widget пришлось перенести ссылку на форму сюда и в каждый тест (я обязательно разберусь с созданием кастомного завода элементов)
+            PayForm payForm = new MainPage(driver).getPayWrapper().getPayForm();
 
             //Сменяемся на форму
             payForm.changeToForm(formName);
@@ -82,6 +80,7 @@ public class MTSReplenishmentTest {
         @CsvSource({"Домашний интернет, Номер абонента, Сумма, E-mail для отправки чека"})
         void homeInternetCheck(String formName, String phNumberPlaceholder, String moneyPlaceholder, String emailPlaceholder) {
 
+            PayForm payForm = new MainPage(driver).getPayWrapper().getPayForm();
 
             //Сменяемся на форму
             payForm.changeToForm(formName);
@@ -101,6 +100,7 @@ public class MTSReplenishmentTest {
         @CsvSource({"Рассрочка, Номер счета на 44, Сумма, E-mail для отправки чека"})
         void installmentCheck(String formName, String scorePlaceholder, String moneyPlaceholder, String emailPlaceholder) {
 
+            PayForm payForm = new MainPage(driver).getPayWrapper().getPayForm();
 
             //Сменяемся на форму
             payForm.changeToForm(formName);
@@ -121,6 +121,7 @@ public class MTSReplenishmentTest {
         @CsvSource({"Задолженность, Номер счета на 2073, Сумма, E-mail для отправки чека"})
         void arrearsCheck(String formName, String scorePlaceholder, String moneyPlaceholder, String emailPlaceholder) {
 
+            PayForm payForm = new MainPage(driver).getPayWrapper().getPayForm();
 
             //Сменяемся на форму
             payForm.changeToForm(formName);
@@ -145,6 +146,8 @@ public class MTSReplenishmentTest {
         @DisplayName("2.1 Проверка надписей в полях фрейма")
         @CsvSource({"Услуги связи, 297777777, 30, someEmail@gmail.com, Номер карты, Срок действия, CVC, Имя держателя (как на карте)"})
         void payFrameFieldsCheck(String formName, String phoneNumber, String money, String email, String cardNumber, String expirationDate, String cvc, String holder) {
+
+            PayForm payForm = new MainPage(driver).getPayWrapper().getPayForm();
 
             //Сменяем на форму
             payForm.changeToForm(formName);
@@ -173,6 +176,8 @@ public class MTSReplenishmentTest {
         @DisplayName("2.2 Проверка корректности отображения суммы (в том числе на кнопке) и номера телефона")
         @CsvSource({"Услуги связи, 297777777, 30, someEmail@gmail.com"})
         void payFrameSumAndNumberCheck(String formName, String phoneNumber, String money, String email) {
+
+            PayForm payForm = new MainPage(driver).getPayWrapper().getPayForm();
 
             //Сменяем на форму
             payForm.changeToForm(formName);
@@ -203,6 +208,8 @@ public class MTSReplenishmentTest {
         @CsvFileSource(resources = "/payFrameCardBrandsLogoCheckSource.cvs")
         void payFrameCardBrandsLogoCheck(String formName, String phoneNumber, String money, String email,
                                          String masterCardSource, String visaSource, String belKartSource, String mirSource, String maestroSource) {
+
+            PayForm payForm = new MainPage(driver).getPayWrapper().getPayForm();
 
             //Сменяем на форму
             payForm.changeToForm(formName);
