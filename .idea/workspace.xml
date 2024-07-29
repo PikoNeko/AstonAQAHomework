@@ -4,27 +4,317 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fdeb584-e695-4d24-98f8-52971e0b370d" name="Changes" comment="Написан код для 9-ого задания">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+    <list default="true" id="4fdeb584-e695-4d24-98f8-52971e0b370d" name="Changes" comment="Исправлен баг со сборщиком мусора">
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson17/POJOClasses/POJOBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson17/POJOClasses/deleteClasses/POJODeleteClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson17/POJOClasses/deleteClasses/POJODeleteHeader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson17/POJOClasses/getClasses/POJOGetClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson17/POJOClasses/getClasses/POJOGetHeader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson17/POJOClasses/patchClasses/POJOPatchClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson17/POJOClasses/patchClasses/POJOPatchHeader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson17/POJOClasses/postClasses/POJOPostClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson17/POJOClasses/postClasses/POJOPostHeader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson17/POJOClasses/putClasses/POJOPutClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson17/POJOClasses/putClasses/POJOPutHeader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson17/RequestMethodsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/maven.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task1/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task1/Bowl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task1/Cat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task1/Dog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task1/Lesson7_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/GeometricShapes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/GeometricalShapesActions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/Lesson7_2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson7/task2/Triangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson8/Lesson8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson9/PhoneBook.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson9/Task1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lesson9/Task2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myInterfaces/WriteChecks.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="lesson14" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;PikoNeko&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/PikoNeko/AstonAQAHomework.git&quot;,
+    &quot;accountId&quot;: &quot;8dacfb42-fe53-4b4a-b7bc-032ef18bb747&quot;
+  }
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2jTZbpP39ltKLOZa54g0MSOLZQV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "git-widget-placeholder": "lesson9"
+    "JUnit.MTSReplenishment$Placeholders.arrearsCheck.executor": "Run",
+    "JUnit.MTSReplenishment$Placeholders.commServicesCheck.executor": "Run",
+    "JUnit.MTSReplenishment$Placeholders.executor": "Run",
+    "JUnit.MTSReplenishment$Placeholders.homeInternetCheck.executor": "Run",
+    "JUnit.MTSReplenishment$Placeholders.installmentCheck.executor": "Run",
+    "JUnit.MTSReplenishmentTest$Iframe.payFrameCardBrandsLogoCheck.executor": "Run",
+    "JUnit.MTSReplenishmentTest$Iframe.payFrameCheck.executor": "Run",
+    "JUnit.MTSReplenishmentTest$Iframe.payFrameSumAndNumberCheck.executor": "Run",
+    "JUnit.MTSReplenishmentTest$Placeholders.executor": "Run",
+    "JUnit.MTSReplenishmentTest.executor": "Run",
+    "JUnit.MTSReplenishmentTest.payFrameCheck.executor": "Run",
+    "JUnit.RequestMethodsTest.deleteCheck (1).executor": "Run",
+    "JUnit.RequestMethodsTest.deleteCheck.executor": "Run",
+    "JUnit.RequestMethodsTest.executor": "Run",
+    "JUnit.RequestMethodsTest.getCheck (1).executor": "Run",
+    "JUnit.RequestMethodsTest.getCheck.executor": "Run",
+    "JUnit.RequestMethodsTest.patchCheck (1).executor": "Run",
+    "JUnit.RequestMethodsTest.patchCheck.executor": "Run",
+    "JUnit.RequestMethodsTest.postCheck.executor": "Run",
+    "JUnit.RequestMethodsTest.putCheck (1).executor": "Run",
+    "JUnit.RequestMethodsTest.putCheck.executor": "Run",
+    "JUnit.TestTest.doSomething.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "lesson17",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.6068966",
+    "settings.editor.selected.configurable": "editor.preferences.import",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.RequestMethodsTest">
+    <configuration name="RequestMethodsTest" type="JUnit" factoryName="JUnit">
+      <module name="lesson10_1" />
+      <option name="PACKAGE_NAME" value="lesson17" />
+      <option name="MAIN_CLASS_NAME" value="lesson17.RequestMethodsTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RequestMethodsTest.deleteCheck (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lesson10_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson17.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson17" />
+      <option name="MAIN_CLASS_NAME" value="lesson17.RequestMethodsTest" />
+      <option name="METHOD_NAME" value="deleteCheck(java.lang.String,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RequestMethodsTest.deleteCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lesson10_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson17.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson17" />
+      <option name="MAIN_CLASS_NAME" value="lesson17.RequestMethodsTest" />
+      <option name="METHOD_NAME" value="deleteCheck(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RequestMethodsTest.patchCheck (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lesson10_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson17.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson17" />
+      <option name="MAIN_CLASS_NAME" value="lesson17.RequestMethodsTest" />
+      <option name="METHOD_NAME" value="patchCheck(java.lang.String,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RequestMethodsTest.patchCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lesson10_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson17.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson17" />
+      <option name="MAIN_CLASS_NAME" value="lesson17.RequestMethodsTest" />
+      <option name="METHOD_NAME" value="patchCheck(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RequestMethodsTest.putCheck (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lesson10_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson17.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson17" />
+      <option name="MAIN_CLASS_NAME" value="lesson17.RequestMethodsTest" />
+      <option name="METHOD_NAME" value="putCheck(java.lang.String,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.RequestMethodsTest" />
+      <item itemvalue="JUnit.RequestMethodsTest.deleteCheck" />
+      <item itemvalue="JUnit.RequestMethodsTest.deleteCheck (1)" />
+      <item itemvalue="JUnit.RequestMethodsTest.patchCheck" />
+      <item itemvalue="JUnit.RequestMethodsTest.patchCheck (1)" />
+      <item itemvalue="JUnit.RequestMethodsTest.putCheck (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RequestMethodsTest.deleteCheck (1)" />
+        <item itemvalue="JUnit.RequestMethodsTest.deleteCheck" />
+        <item itemvalue="JUnit.RequestMethodsTest.patchCheck (1)" />
+        <item itemvalue="JUnit.RequestMethodsTest.patchCheck" />
+        <item itemvalue="JUnit.RequestMethodsTest.putCheck (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4fdeb584-e695-4d24-98f8-52971e0b370d" name="Changes" comment="Написаны все тесты" />
+      <created>1721413104224</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721413104224</updated>
+      <workItem from="1721413107637" duration="1178000" />
+      <workItem from="1721467828830" duration="18741000" />
+      <workItem from="1721491819778" duration="1780000" />
+      <workItem from="1721512621545" duration="6017000" />
+      <workItem from="1721553958119" duration="20176000" />
+      <workItem from="1721575875874" duration="13890000" />
+      <workItem from="1721744147000" duration="20000" />
+      <workItem from="1721744722234" duration="123000" />
+      <workItem from="1721744934401" duration="634000" />
+      <workItem from="1721906365952" duration="147000" />
+      <workItem from="1721906707414" duration="2315000" />
+      <workItem from="1721990458483" duration="14358000" />
+      <workItem from="1722099445948" duration="610000" />
+      <workItem from="1722155506592" duration="12256000" />
+      <workItem from="1722201947180" duration="6557000" />
+      <workItem from="1722265205057" duration="4475000" />
+    </task>
+    <task id="LOCAL-00001" summary="Написаны все тесты">
+      <option name="closed" value="true" />
+      <created>1721604752577</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721604752577</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Исправлен баг со сборщиком мусора">
+      <option name="closed" value="true" />
+      <created>1721745527078</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721745527078</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Написан код для 9-ого задания" />
-    <option name="LAST_COMMIT_MESSAGE" value="Написан код для 9-ого задания" />
+    <MESSAGE value="Написаны все тесты" />
+    <MESSAGE value="Исправлен баг со сборщиком мусора" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправлен баг со сборщиком мусора" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="6" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/appium/java-client/9.2.3/java-client-9.2.3.jar!/io/appium/java_client/pagefactory/Widget.class</url>
+          <line>36</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
