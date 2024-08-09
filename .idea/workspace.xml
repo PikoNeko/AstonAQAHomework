@@ -4,9 +4,64 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fdeb584-e695-4d24-98f8-52971e0b370d" name="Changes" comment="Написаны все тесты">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/maven.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven.yml" afterDir="false" />
+    <list default="true" id="4fdeb584-e695-4d24-98f8-52971e0b370d" name="Changes" comment="Фреймворк подключен.&#10;Созданы репорты.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/20d12f30f72cb2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/7ab057910f7b0ec1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/89d1c3e2fb14b522.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/8d23402f5fbf2f58.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/a2f1870e043932d9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/a5b946a4d64f3efe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/d24576eaa1bd9c79.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/behaviors.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/behaviors.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/categories.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/categories.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/packages.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/suites.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/suites.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/3f1cedba848828f5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/57cabb94e87c1e4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/a74e7bbe57264ca0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/b3930d0adb5adbca.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/b94184d0e2b974ed.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/ba49e43e6869a6db.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/f93d3cea0cef1ecd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/timeline.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/export/influxDbData.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/export/mail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/export/prometheusData.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/history/categories-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/history/duration-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/history/history-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/history/history.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/history/retry-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/plugin/behaviors/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/plugin/packages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/plugin/screen-diff/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/plugin/screen-diff/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/behaviors.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/categories-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/categories.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/duration-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/duration.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/environment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/executors.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/history-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/retry-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/severity.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/status-chart.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/suites.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/summary.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lesson14/MTSReplenishmentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson14/MTSReplenishmentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lesson14/pages/mainPage/abstractions/BaseComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson14/pages/mainPage/abstractions/BaseComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/lesson14/pages/mainPage/objects/PayForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson14/pages/mainPage/objects/PayForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,13 +114,15 @@
     "JUnit.MTSReplenishment$Placeholders.installmentCheck.executor": "Run",
     "JUnit.MTSReplenishmentTest$Iframe.payFrameCardBrandsLogoCheck.executor": "Run",
     "JUnit.MTSReplenishmentTest$Iframe.payFrameCheck.executor": "Run",
-    "JUnit.MTSReplenishmentTest$Iframe.payFrameSumAndNumberCheck.executor": "Run",
+    "JUnit.MTSReplenishmentTest$Iframe.payFrameSumAndNumberCheck.executor": "Debug",
+    "JUnit.MTSReplenishmentTest$Placeholders.commServicesCheck.executor": "Run",
     "JUnit.MTSReplenishmentTest$Placeholders.executor": "Run",
+    "JUnit.MTSReplenishmentTest$Placeholders.homeInternetCheck.executor": "Run",
     "JUnit.MTSReplenishmentTest.executor": "Run",
     "JUnit.MTSReplenishmentTest.payFrameCheck.executor": "Run",
     "JUnit.TestTest.doSomething.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "lesson18",
+    "git-widget-placeholder": "#11 on lesson18",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -95,22 +152,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MTSReplenishmentTest$Iframe.payFrameCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lesson10_1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson14.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lesson14.MTSReplenishmentTest" />
-      <option name="MAIN_CLASS_NAME" value="lesson14.MTSReplenishmentTest$Iframe" />
-      <option name="METHOD_NAME" value="payFrameCheck(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MTSReplenishmentTest$Iframe.payFrameSumAndNumberCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lesson10_1" />
       <extension name="coverage">
@@ -122,6 +163,38 @@
       <option name="PACKAGE_NAME" value="lesson14.MTSReplenishmentTest" />
       <option name="MAIN_CLASS_NAME" value="lesson14.MTSReplenishmentTest$Iframe" />
       <option name="METHOD_NAME" value="payFrameSumAndNumberCheck(java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MTSReplenishmentTest$Placeholders.commServicesCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lesson10_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson14.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson14.MTSReplenishmentTest" />
+      <option name="MAIN_CLASS_NAME" value="lesson14.MTSReplenishmentTest$Placeholders" />
+      <option name="METHOD_NAME" value="commServicesCheck(java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MTSReplenishmentTest$Placeholders.homeInternetCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lesson10_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson14.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson14.MTSReplenishmentTest" />
+      <option name="MAIN_CLASS_NAME" value="lesson14.MTSReplenishmentTest$Placeholders" />
+      <option name="METHOD_NAME" value="homeInternetCheck(java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,36 +215,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MTSReplenishmentTest.payFrameCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lesson10_1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson14.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lesson14" />
-      <option name="MAIN_CLASS_NAME" value="lesson14.MTSReplenishmentTest" />
-      <option name="METHOD_NAME" value="payFrameCheck(java.lang.String,java.lang.String,java.lang.String,java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="JUnit.MTSReplenishmentTest$Placeholders.commServicesCheck" />
+      <item itemvalue="JUnit.MTSReplenishmentTest$Placeholders.homeInternetCheck" />
       <item itemvalue="JUnit.MTSReplenishmentTest$Iframe.payFrameCardBrandsLogoCheck" />
       <item itemvalue="JUnit.MTSReplenishmentTest$Iframe.payFrameSumAndNumberCheck" />
       <item itemvalue="JUnit.MTSReplenishmentTest" />
-      <item itemvalue="JUnit.MTSReplenishmentTest$Iframe.payFrameCheck" />
-      <item itemvalue="JUnit.MTSReplenishmentTest.payFrameCheck" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.MTSReplenishmentTest" />
-        <item itemvalue="JUnit.MTSReplenishmentTest$Iframe.payFrameCardBrandsLogoCheck" />
         <item itemvalue="JUnit.MTSReplenishmentTest$Iframe.payFrameSumAndNumberCheck" />
-        <item itemvalue="JUnit.MTSReplenishmentTest$Iframe.payFrameCheck" />
-        <item itemvalue="JUnit.MTSReplenishmentTest.payFrameCheck" />
+        <item itemvalue="JUnit.MTSReplenishmentTest$Placeholders.homeInternetCheck" />
+        <item itemvalue="JUnit.MTSReplenishmentTest$Placeholders.commServicesCheck" />
+        <item itemvalue="JUnit.MTSReplenishmentTest$Iframe.payFrameCardBrandsLogoCheck" />
       </list>
     </recent_temporary>
   </component>
@@ -200,6 +257,7 @@
       <workItem from="1721744147000" duration="20000" />
       <workItem from="1721744722234" duration="123000" />
       <workItem from="1721744934401" duration="557000" />
+      <workItem from="1723192391860" duration="10348000" />
     </task>
     <task id="LOCAL-00001" summary="Написаны все тесты">
       <option name="closed" value="true" />
@@ -209,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721604752577</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Фреймворк подключен. Созданы репорты.">
+      <option name="closed" value="true" />
+      <created>1722775672830</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1722775672830</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,7 +307,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Написан код для 9-ого задания" />
     <MESSAGE value="Написаны все тесты" />
-    <option name="LAST_COMMIT_MESSAGE" value="Написаны все тесты" />
+    <MESSAGE value="fixup! Фреймворк подключен. Созданы репорты." />
+    <MESSAGE value="Фреймворк подключен. Созданы репорты." />
+    <option name="LAST_COMMIT_MESSAGE" value="Фреймворк подключен. Созданы репорты." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -254,6 +322,20 @@
           <url>jar://$MAVEN_REPOSITORY$/io/appium/java-client/9.2.3/java-client-9.2.3.jar!/io/appium/java_client/pagefactory/Widget.class</url>
           <line>36</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/lesson14/MTSReplenishmentTest.java</url>
+          <line>193</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/lesson14/pages/mainPage/abstractions/BaseComponent.java</url>
+          <line>9</line>
+          <properties class="lesson14.pages.mainPage.abstractions.BaseComponent" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,5 +1,7 @@
 package lesson14;
 
+import io.qameta.allure.Allure;
+import io.qameta.allure.Step;
 import lesson14.pages.mainPage.BePaidIframe;
 import lesson14.pages.mainPage.MainPage;
 import lesson14.pages.mainPage.objects.*;
@@ -9,11 +11,14 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.CsvSource;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.ByteArrayInputStream;
 import java.time.Duration;
 import java.util.Locale;
 
@@ -24,28 +29,35 @@ public class MTSReplenishmentTest {
 
     private WebDriver driver;
     private MainPage mainPage;
+    private PayForm payForm;
     @BeforeEach
     void beforeEachTest() {
 
+        Allure.step("Открываем браузер.");
         driver = new ChromeDriver();
         String url = "https://mts.by";
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
+        driver.manage().window().maximize();
+
+        Allure.step(String.format("Переходим на сайт: %s", url));
         driver.get(url);
 
         mainPage = new MainPage(driver);
         CookieWrapper cookieWrapper = mainPage.getCookieWrapper();
         cookieWrapper.declineCookies();
-
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
         //Ожидаем
         wait.until(ExpectedConditions.invisibilityOf(cookieWrapper.getDeclineButton()));
+
+        Allure.step("Переходим к блоку <Онлайн пополнение без комиссии>");
+        payForm = mainPage.getPayWrapper().getPayForm();
 
     }
 
     @AfterEach
     void afterEachTest() {
-
+        Allure.step("Закрываем браузер.");
+        Allure.addAttachment("Screenshot", new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
         driver.quit();
     }
 
@@ -59,15 +71,13 @@ public class MTSReplenishmentTest {
         @CsvSource({"Услуги связи, Номер телефона, Сумма, E-mail для отправки чека"})
         void commServicesCheck(String formName, String phNumberPlaceholder, String moneyPlaceholder, String emailPlaceholder) {
 
-            //Из-за использования appium widget пришлось перенести ссылку на форму сюда и в каждый тест (я обязательно разберусь с созданием кастомного завода элементов)
-            PayForm payForm = new MainPage(driver).getPayWrapper().getPayForm();
-
             //Сменяемся на форму
-            payForm.changeToForm(formName);
+            formChange(formName);
 
             //Записываем ссылку на нужную форму
             CommServicesPayForm commServicesPayForm = payForm.getCommServicesPayForm();
 
+            Allure.step("Проверяем Placeholders");
             //Проверяем
             assertAll("Проверка placeholders",
                     () -> assertEquals(commServicesPayForm.getNumberFieldPlaceholder(), phNumberPlaceholder),
@@ -80,14 +90,13 @@ public class MTSReplenishmentTest {
         @CsvSource({"Домашний интернет, Номер абонента, Сумма, E-mail для отправки чека"})
         void homeInternetCheck(String formName, String phNumberPlaceholder, String moneyPlaceholder, String emailPlaceholder) {
 
-            PayForm payForm = new MainPage(driver).getPayWrapper().getPayForm();
-
             //Сменяемся на форму
-            payForm.changeToForm(formName);
+            formChange(formName);
 
             //Записываем ссылку на нужную форму
             InternetPayForm internetPayForm = payForm.getInternetPayForm();
 
+            Allure.step("Проверяем Placeholders");
             //Проверяем
             assertAll("Проверка placeholders",
                     () -> assertEquals(internetPayForm.getNumberFieldPlaceholder(), phNumberPlaceholder),
@@ -100,14 +109,14 @@ public class MTSReplenishmentTest {
         @CsvSource({"Рассрочка, Номер счета на 44, Сумма, E-mail для отправки чека"})
         void installmentCheck(String formName, String scorePlaceholder, String moneyPlaceholder, String emailPlaceholder) {
 
-            PayForm payForm = new MainPage(driver).getPayWrapper().getPayForm();
 
             //Сменяемся на форму
-            payForm.changeToForm(formName);
+            formChange(formName);
 
             //Записываем ссылку на нужную форму
             InstallmentPayForm installmentPayForm = payForm.getInstallmentPayForm();
 
+            Allure.step("Проверяем Placeholders");
             //Проверяем
             assertAll("Проверка placeholders",
                     () -> assertEquals(installmentPayForm.getScoreFieldPlaceholder(), scorePlaceholder),
@@ -121,14 +130,14 @@ public class MTSReplenishmentTest {
         @CsvSource({"Задолженность, Номер счета на 2073, Сумма, E-mail для отправки чека"})
         void arrearsCheck(String formName, String scorePlaceholder, String moneyPlaceholder, String emailPlaceholder) {
 
-            PayForm payForm = new MainPage(driver).getPayWrapper().getPayForm();
 
             //Сменяемся на форму
-            payForm.changeToForm(formName);
+            formChange(formName);
 
             //Записываем ссылку на нужную форму
             ArrearsPayForm arrearsPayForm = payForm.getArrearsPayForm();
 
+            Allure.step("Проверяем Placeholders");
             //Проверяем
             assertAll("Проверка placeholders",
                     () -> assertEquals(arrearsPayForm.getScoreFieldPlaceholder(), scorePlaceholder),
@@ -147,16 +156,11 @@ public class MTSReplenishmentTest {
         @CsvSource({"Услуги связи, 297777777, 30, someEmail@gmail.com, Номер карты, Срок действия, CVC, Имя держателя (как на карте)"})
         void payFrameFieldsCheck(String formName, String phoneNumber, String money, String email, String cardNumber, String expirationDate, String cvc, String holder) {
 
-            PayForm payForm = new MainPage(driver).getPayWrapper().getPayForm();
 
-            //Сменяем на форму
-            payForm.changeToForm(formName);
+            //Сменяемся на форму
+            formChange(formName);
 
-            //Записываем ссылку на нужную форму
-            CommServicesPayForm commServicesPayForm = payForm.getCommServicesPayForm();
-
-            //Вводим и отправляем
-            commServicesPayForm.sendForm(phoneNumber, money, email);
+            sendForm(phoneNumber, money, email);
 
             //Переключаемся
             BePaidIframe bePaidIframe = mainPage.switchingTOPaidIframe();
@@ -177,19 +181,13 @@ public class MTSReplenishmentTest {
         @CsvSource({"Услуги связи, 297777777, 30, someEmail@gmail.com"})
         void payFrameSumAndNumberCheck(String formName, String phoneNumber, String money, String email) {
 
-            PayForm payForm = new MainPage(driver).getPayWrapper().getPayForm();
 
             //Сменяем на форму
             payForm.changeToForm(formName);
 
-            //Записываем ссылку на нужную форму
-            CommServicesPayForm commServicesPayForm = payForm.getCommServicesPayForm();
+            sendForm(phoneNumber, money, email);
 
-            //Вводим и отправляем
-            commServicesPayForm.sendForm(phoneNumber, money, email);
-
-            //Переключаемся
-            BePaidIframe bePaidIframe = new MainPage(driver).switchingTOPaidIframe();
+            BePaidIframe bePaidIframe = mainPage.switchingTOPaidIframe();
             //Ожидаем догрузки
             bePaidIframe.waitToBeVisible();
             //Приводим к нужному формату
@@ -209,22 +207,18 @@ public class MTSReplenishmentTest {
         void payFrameCardBrandsLogoCheck(String formName, String phoneNumber, String money, String email,
                                          String masterCardSource, String visaSource, String belKartSource, String mirSource, String maestroSource) {
 
-            PayForm payForm = new MainPage(driver).getPayWrapper().getPayForm();
-
             //Сменяем на форму
             payForm.changeToForm(formName);
 
-            //Записываем ссылку на нужную форму
-            CommServicesPayForm commServicesPayForm = payForm.getCommServicesPayForm();
-
-            //Вводим и отправляем
-            commServicesPayForm.sendForm(phoneNumber, money, email);
+            sendForm(phoneNumber, money, email);
 
             //Переключаемся
-            BePaidIframe bePaidIframe = new MainPage(driver).switchingTOPaidIframe();
+            BePaidIframe bePaidIframe = mainPage.switchingTOPaidIframe();
             //Ожидаем догрузки
             bePaidIframe.waitToBeVisible();
 
+
+            Allure.step("Проверяем видимость лого");
             //Проверяем
             assertAll("Проверка видимости лого",
                     () -> assertTrue(bePaidIframe.getCardBrandsContainerImgBySrc(masterCardSource).isDisplayed()),
@@ -233,8 +227,27 @@ public class MTSReplenishmentTest {
                     () -> assertTrue(bePaidIframe.getCardBrandsContainerImgBySrc(mirSource).isDisplayed()),
                     () -> assertTrue(bePaidIframe.getCardBrandsContainerImgBySrc(maestroSource).isDisplayed())
             );
-
-
         }
+    }
+
+    @Step("Смена формы")
+    void formChange(String formName) {
+
+        Allure.step(String.format("Меняем на форму <%s>", formName));
+        //Сменяемся на форму
+        payForm.changeToForm(formName);
+
+
+    }
+
+    @Step("Отправка формы")
+    void sendForm(String phoneNumber,String money,String email) {
+
+        //Записываем ссылку на нужную форму
+        CommServicesPayForm commServicesPayForm = payForm.getCommServicesPayForm();
+        Allure.step("Вводим данные в форму");
+        Allure.step("Нажимаем кнопку <Продолжить>");
+        //Вводим и отправляем
+        commServicesPayForm.sendForm(phoneNumber, money, email);
     }
 }
